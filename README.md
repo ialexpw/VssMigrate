@@ -13,7 +13,7 @@ The alterations made in this code allow the original authors and dates (from Sou
 * Changeset 16890 Resolves the individual VSS-checkins to atomic SVN commits via the approximate timestamp. We hope to promote this to a release version soon, but feel free to try, as people have been having good luck with it.
 * Written in C# using .NET 3.5
 * Utilizes SharpSvn and VSS Interop.
-* Preserves the username and revision datetime via direct editing of the revprops folder in the SVN repository. This requires direct file system access to the SVN repository and is not a recommended practice, but it works quite well and does not require editing the system clock or matching any usernames/passwords
+* ~~Preserves the username and revision datetime via direct editing of the revprops folder in the SVN repository. This requires direct file system access to the SVN repository and is not a recommended practice, but it works quite well and does not require editing the system clock or matching any usernames/passwords~~ No longer works on the version on CodePlex.
 * Removes all VSS bindings and related files during the import
 * Use VSS 2005 for best results
 * Support for tags
