@@ -1,0 +1,8 @@
+2018-10-25 11:23:04,278 ERROR  - VSSDIR does not contain VSS repository (with a srcsafe.ini file).  (Looking for: \\server\path\srcsafe.ini) - 
+2018-10-25 11:23:04,364 FATAL  - Bad/missing info in VssMigrate.exe.config file. - 
+2018-10-25 11:27:37,748 ERROR  - VSSDIR does not contain VSS repository (with a srcsafe.ini file).  (Looking for: \\RS815Cluster\Fms\VSS\srcsafe.ini) - 
+2018-10-25 11:27:37,759 FATAL  - Bad/missing info in VssMigrate.exe.config file. - 
+2018-10-25 11:32:31,877 FATAL  -  - System.Runtime.InteropServices.COMException (0x80040154): Retrieving the COM class factory for component with CLSID {783CD4E4-9D54-11CF-B8EE-00608CC9A71F} failed due to the following error: 80040154.
+   at VssMigrate.Program.BuildFileList() in C:\Users\AlexWhite\Desktop\Migrate\sourceCode\trunk\src\Program.cs:line 375
+   at VssMigrate.Program.Main() in C:\Users\AlexWhite\Desktop\Migrate\sourceCode\trunk\src\Program.cs:line 102
+

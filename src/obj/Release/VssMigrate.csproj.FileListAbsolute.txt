@@ -1,0 +1,17 @@
+C:\Users\AlexWhite\Desktop\Migrate\sourceCode\trunk\src\bin\log4net.config
+C:\Users\AlexWhite\Desktop\Migrate\sourceCode\trunk\src\bin\VssMigrate.exe.config
+C:\Users\AlexWhite\Desktop\Migrate\sourceCode\trunk\src\bin\VssMigrate.exe
+C:\Users\AlexWhite\Desktop\Migrate\sourceCode\trunk\src\bin\VssMigrate.pdb
+C:\Users\AlexWhite\Desktop\Migrate\sourceCode\trunk\src\bin\Interop.SourceSafeTypeLib.dll
+C:\Users\AlexWhite\Desktop\Migrate\sourceCode\trunk\src\bin\log4net.dll
+C:\Users\AlexWhite\Desktop\Migrate\sourceCode\trunk\src\bin\SharpSvn.dll
+C:\Users\AlexWhite\Desktop\Migrate\sourceCode\trunk\src\bin\log4net.xml
+C:\Users\AlexWhite\Desktop\Migrate\sourceCode\trunk\src\bin\SharpSvn.xml
+C:\Users\AlexWhite\Desktop\Migrate\sourceCode\trunk\src\bin\SharpSvn-DB44-20-Win32.dll
+C:\Users\AlexWhite\Desktop\Migrate\sourceCode\trunk\src\bin\SharpSvn-SASL21-23-Win32.dll
+C:\Users\AlexWhite\Desktop\Migrate\sourceCode\trunk\src\bin\SharpPlink-Win32.svnExe
+C:\Users\AlexWhite\Desktop\Migrate\sourceCode\trunk\src\obj\Release\VssMigrate.csprojAssemblyReference.cache
+C:\Users\AlexWhite\Desktop\Migrate\sourceCode\trunk\src\obj\Release\VssMigrate.csproj.CoreCompileInputs.cache
+C:\Users\AlexWhite\Desktop\Migrate\sourceCode\trunk\src\obj\Release\VssMigrate.csproj.CopyComplete
+C:\Users\AlexWhite\Desktop\Migrate\sourceCode\trunk\src\obj\Release\VssMigrate.exe
+C:\Users\AlexWhite\Desktop\Migrate\sourceCode\trunk\src\obj\Release\VssMigrate.pdb
