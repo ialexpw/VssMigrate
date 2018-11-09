@@ -887,19 +887,15 @@ namespace VssMigrate
                 }
                 delkeys.Clear();
 
-                /////////////////////////////////
-
                 SvnInfoEventArgs infoEventArgs;
                 //Use one of the committed files to determine the revision we just committed
                 var uri = new Uri(string.Format("{0}{1}", svnURL, svnPROJ));
                 //svnClient.GetInfo(SvnTarget.FromString(filePath), out infoEventArgs);
                 svnClient.GetInfo(SvnTarget.FromUri(uri), out infoEventArgs);
 
-                svnClient.SetRevisionProperty(new Uri("http://svn-repo/svn/sandbox"), infoEventArgs.Revision,
+                svnClient.SetRevisionProperty(new Uri(svnURL), infoEventArgs.Revision,
                     SvnPropertyNames.SvnAuthor,
                     properties.Author);
-
-                
 
                 string strCfgTime;
                 string[] strSplit, strSplit2;
@@ -909,37 +905,9 @@ namespace VssMigrate
 
                 strCfgTime = strSplit2[2] + '-' + strSplit2[1] + '-' + strSplit2[0] + 'T' + strSplit[1] + ".000000Z";
 
-                //strCfgTime = properties.Time.ToString();
-                //strCfgTime = strCfgTime.Replace("/", "-");
-                //strCfgTime = strCfgTime.Replace(" ", "T");
-
-                migrateLog.DebugFormat("Date/Time String: " + strCfgTime);
-
-                svnClient.SetRevisionProperty(new Uri("http://svn-repo/svn/sandbox"), infoEventArgs.Revision,
+                svnClient.SetRevisionProperty(new Uri(svnURL), infoEventArgs.Revision,
                     SvnPropertyNames.SvnDate,
                     strCfgTime);
-
-                
-
-
-
-                /////////////////////////////////
-
-                /*if (!string.IsNullOrEmpty(svnREVPROPSPATH))
-                {
-                    migrateLog.DebugFormat("Counterfeiting revision properties...");
-                    SvnInfoEventArgs infoEventArgs;
-                    //Use one of the committed files to determine the revision we just committed
-                    var uri = new Uri(string.Format("{0}{1}", svnURL, svnPROJ));
-                    //svnClient.GetInfo(SvnTarget.FromString(filePath), out infoEventArgs);
-                    svnClient.GetInfo(SvnTarget.FromUri(uri), out infoEventArgs);
-                    
-                    // (This will fail to work in subversion 1.6 once the shard has been packed)
-                    // we use sharpsvn's functions now, so ... not our problem any more :)
-                    var props = new SvnRevProps(svnREVPROPSPATH, infoEventArgs.Revision);
-                    props.SetAuthor(properties.Author);
-                    props.SetDate(properties.Time);
-                }*/
             }
         }
 
